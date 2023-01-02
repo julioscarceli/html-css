@@ -1,0 +1,227 @@
+Capítulo 21 Aula 02 – Sua primeira tabela em HTML
+
+ 
+       HIERARQUIA DE TABELA (SIMPLES)
+       TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho da tabela
+                TABLE DATA = dado de tabela 
+
+
+
+ TAGS = 
+	<table> = tabela 
+
+	<tr> = linha de tabela 
+
+	<td> = dado de tabela  
+
+--------//---------------------------------------------------	
+
+Capítulo 21 Aula 03 – Alinhando o conteúdo em tabelas
+
+colocou 
+widht 400 px 
+height 400 px 
+
+apos 
+em td { 
+
+	colocou text- align = center 
+}   
+
+pra centralizar os dados da tabela 
+
+
+pra alinhar horizontalmente = text-align: center; /*Alinhamento horizontal */ (right, left, center)
+pra alinhar verticalmente = vertical-align: middle; (top, middle, bottom)
+
+
+------//-----------------------------------------------------
+
+
+Capítulo 21 Aula 04 – Aprendendo a trabalhar com tabelas grandes
+
+
+ <!--Anatomia para tabelas grandes
+        TABLE
+            THEAD
+                TR,TD , TH
+            TBODY
+                TR,TD , TH
+            TFOOT
+                TR,TD , TH
+    -->
+
+<TR> = linha de tabela 
+<TD> =  dado de tabela 
+<TH> = cabeçalho da tabela
+
+
+--------//----------------------------------------
+
+Capítulo 21 Aula 05 – Caption e Escopo de títulos em tabelas
+
+<Caption> = legenda da tabela (titulo da tabela)
+
+<scope>  "col"    =   TITULO DA COLUNA (os dados estão abaixo)
+<scope>  "row"    =   TITULO DA LINHA  (os dados estão ao lado, na linha)
+
+------//--------------------------------------------------
+
+Capítulo 21 Aula 06 – Efeito Zebrado na tabela com HTML e CSS
+
+
+EFEITO ZEBRADO DENTRO DAS LINHAS DO CORPO 
+dentro do style ->
+
+tbody > tr: nth-child (2n) {
+		
+	background-color = lightgrey
+}
+
+
+---------//--------------------------------------------------
+
+Capítulo 21 Aula 07 – Cabeçalho fixo em tabelas grandes
+
+primeira coisa colocar em table position : relative; 
+
+       table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            
+
+        }
+
+
+segunda coisa feita pra colocar cabeçalho fixo 
+
+        thead > tr > th {
+
+                position: sticky;
+                top: -1px;
+                background-color: gray;
+        }
+
+
+------//-----------------------------------------------------
+
+
+
+
+CSS =   
+	<style>
+	table {
+	
+
+	}
+	
+	td {
+		border : 1px solid black;
+		padding : 10px
+		text- align : center;
+	}
+	</style>
+
+
+
+-------//----------------------------------------------------
+
+
+Capítulo 21 Aula 08 – Mesclagem de células
+
+
+CSS =   
+	<style>
+	table {
+		border-collapse : collapse
+		widht 300px
+	}
+	
+	td {
+		border : 1px solid black;
+		padding : 10px
+		text- align : center;
+	}
+	</style>
+
+
+
+
+
+
+Capítulo 21 Aula 09 – Desafios (parte 1)
+
+
+para mesclar celulas 
+
+tags
+<rowspan/> = mescla na linha
+<colspan/> = mescla na coluna 
+
+
+
+
+
+
+Capítulo 21 Aula 10 – Exemplo de tabela completa
+
+
+
+
+
+
+Capítulo 21 Aula 11 – Escopos de grupo
+***TH SEMPRE TEM ESCOPO
+
+
+
+<thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+
+            </thead>
+
+
+
+
+
+<tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocaveis</td>
+                    <td>Amnesia</td>
+                    <td>Gladiador</td>
+                </tr>
+
+
+destaque para tags de escopo
+
+	scope = "rowgroup"  
+	scope = "colgroup"
+
+
+
+Capítulo 21 Aula 12 – Desafios (parte 2)
+ 
+
+
+
