@@ -166,6 +166,11 @@ tags
 
 
 
+
+
+
+
+
 Capítulo 21 Aula 10 – Exemplo de tabela completa
 
 
@@ -173,7 +178,14 @@ Capítulo 21 Aula 10 – Exemplo de tabela completa
 
 
 
-Capítulo 21 Aula 11 – Escopos de grupo
+
+
+
+
+
+
+
+********Capítulo 21 Aula 11 – Escopos de grupo
 ***TH SEMPRE TEM ESCOPO
 
 
@@ -220,8 +232,58 @@ destaque para tags de escopo
 
 
 
-Capítulo 21 Aula 12 – Desafios (parte 2)
+
+
+
+
+
+
+*********Capítulo 21 Aula 12 – Desafios (parte 2)
  
+
+
+
+
+
+
+
+
+
+
+**********Capítulo 21 Aula 13 – Agrupando Colunas com colgroup
+
+depois de table no body para destacar colunas :
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+
+        </colgroup>
+
+
+
+
+
+**********Capítulo 21 Aula 14 – Tabelas responsivas
+
+tabelas em telas pequenas
+
+1° envelopar <table> até  <table/>  a tabela inteira com a 
+tag <div>
+
+2 colocar id dentro da <div id "container">
+
+3° depois em CSS ->
+  
+     div#container {
+	overflow-x :auto;
+}
+ 
+!!!!ISSO PARA CRIAR TABELAS RESPONSIVAS DENTRO DO SITE 
+
+
 
 
 
