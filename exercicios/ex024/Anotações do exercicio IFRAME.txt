@@ -84,3 +84,33 @@ no estilo coloquei as configurações ja do exercicio anterior.
 
 ******************** Capítulo 22 Aula 4 – Navegação no iframe*******************
  PAREI AQUI 
+
+
+
+
+
+
+**************Tornando iframes mais seguros - @Curso em Vídeo HTML5 e CSS3*********
+
+1 tag para formularios 
+
+    <form action="cadastro.php" method="get"></form>
+    <p>
+        Nome:
+        <input type="text" name="nome" id="nome">
+        <input type="submit" value="Cadastrar">
+
+    </p>
+
+
+2 segurança dentro do iframe -> tags
+   
+
+<iframe src="paginas-extras/pag004.html"  sandbox="sandbox" 
+    referrerpolicy="no-referrer">
+        Seu navegador não é compativel com isso.
+    </iframe>
+
+
+
+PAREI NO 11:20 DESSE VIDEO CONTINUAR AMANHA 
