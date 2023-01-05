@@ -1,0 +1,86 @@
+Capítulo 22 Aula 1 – O iframe ainda pode ser usado?
+
+Iframe = quadros em linha (guanabara que chamou assim nocurso)
+
+
+
+TAG para uso de iframe
+ <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+
+
+
+
+*************Capítulo 22 Aula 2 – Configurando iframes*************
+
+colocar um link dentro da TAG do iframe, para se caso
+o navegador do usuario não for compativel com o Iframe
+ele mostrar o link para acessar o site
+
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em video</a>
+        </iframe>
+        para aprender a programar.
+
+    </p>
+
+1 Tamanho padrão do iframe = <!--300largurax150altura-->
+
+
+
+
+2 aumentar e diminuir a largura e altura do iframe pelo CSS style
+   <style>
+        iframe {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+
+
+
+3 scolling = "yes"  (essa tag dentro do iframe serve para deixar automaticamente
+a barra de rolagem no iframe.
+
+EX: 
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling ="yes">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em video</a>
+        </iframe>
+        para aprender a programar.
+
+    </p>
+
+
+********Conteúdo local no iframe - @Curso em Vídeo HTML5 e CSS3*************
+
+1 criar outra pagina no html, pag001.html com conteudo interno
+
+
+2 colocar o endereço dessa segunda pagina no lugar do endereço do site,
+no caso abaixo ficou "pag001.html" para deixar no iframe conteudo de uma pagina
+interna minha 
+
+  <iframe src="pag001.html" frameborder="0" height="400" width="400"></iframe>
+
+
+3 nesse exemplo usamos no estilo da pagina principal essa tag 
+        iframe {
+            display: block;
+            margin: auto;
+        }
+
+para centralizar o iframe na tela !!
+
+
+4 peguei conteudo do exercicio de tabela para colocar na pag001 
+e mostrar no iframe da pagina principal (iframe002.html)
+no estilo coloquei as configurações ja do exercicio anterior.
+
+
+
+******************** Capítulo 22 Aula 4 – Navegação no iframe*******************
+ PAREI AQUI 
