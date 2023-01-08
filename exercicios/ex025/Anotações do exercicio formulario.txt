@@ -1,0 +1,71 @@
+*******Como criar formulários com HTML5 - @Curso em Vídeo HTML5 e CSS3***********
+
+
+1° passo TAG*** html
+
+	    <h1>Meu primeiro formulário</h1>
+    <form>
+        <p>Nome: <input type="text" name="" id=""></p>
+        <p>Sobrenome: <input type="text" name="" id=""> </p>
+	<p><input type="submit" value="Enviar"></p>
+    </form>
+
+  anotações :  (tag é <form>  e dentro do paragrafo 
+  a tag input:text (para caixa de texto) ) 
+
+	TAG**** ->  <p><input type="submit" value="Enviar"></p> 
+	(essa tag serve para criar o botão de enviar embaixo do formulario)
+
+
+
+
+	3° passo
+	    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"> </p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+
+    TAG*** <p> <label for = “inome” > Nome : </label> 
+
+    para criar a ligação da caixa com o Nome 
+
+    o label é com se fosse uma etiqueta do campo, 
+    eu preciso colocar uma identificação no objeto de input
+
+
+
+********Métodos GET e POST para formulários - @Curso em Vídeo HTML5 e CSS3******
+
+	Metodo post  serve para não aparecer na URL os dados digitados no campo do 
+	usuario 
+
+	   <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post">
+
+	TAG "POST" serve pra não deixar visivel na URL os dados do usuario
+  
+
+	Quando usar metodo GET?
+
+	quando os dados nao forem sensiveis, voce não ta pedindo senha, numero de cartao de credito, endereço
+
+	só quando dados nao forem sensiveis
+
+	- QUANDO VOCE ENVIA DADOS POR GET VOCE SÓ PODE ENVIAR 3 MIL BYTES ( 3 MIL LETRAS)
+
+	Quando eu uso metodo POST?
+
+	dados sensiveis 
+	
+	se voce quiser que os dados não apareçam na url
+
+	se os dados tem mais de 3 mil bytes
+
+	envio de arquivos
+
+
